@@ -1,0 +1,16 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { AppProvider } from './state/AppContext';
+import { AppRoutes } from './navigation/AppRoutes';
+
+export function App() {
+  return (
+    <BrowserRouter>
+      <AppProvider>
+        <AppRoutes />
+      </AppProvider>
+    </BrowserRouter>
+  );
+}
+
+export default App;
